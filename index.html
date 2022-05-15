@@ -16,17 +16,22 @@
         }
         </style>
     </head>
-    <body>
+    <body id="body">
         <h1>About me/O mnie</h1>
         I live in Poland<br>
         My phone iPhone 5s/Samsung Galaxy M21<br>
         there will be more soon<br>
+        <button onClick="change()" style="margin-top: 10px; border-radius: 20px;" >O mnie/About Me</button><br><br>
         <script>
             if (window.location.protocol != "https:") {
                 window.location.protocol = "https:";
                 window.location.reload();
             }
+            
+            function change() {
+                body = document.getElementbyID("body")
+                body.innerHTML = "tutaj htmla dajesz"
+            }
         </script>
     </body>
 </html>
-<a href="https://szaq.pl"><button style="margin-top: 10px; border-radius: 20px;" >O mnie/About Me</button></a><br><br>
